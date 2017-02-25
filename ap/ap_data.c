@@ -5205,7 +5205,7 @@ VOID APHandleRxDataFrame_Hdr_Trns(IN PRTMP_ADAPTER pAd, IN RX_BLK * pRxBlk)
 		DBGPRINT(RT_DEBUG_OFF,
 			 ("-->%s(%d): Dump Related Info!\n", __FUNCTION__,
 			  __LINE__));
-		hex_dump("DataFrameHeader", pHeader, 36);
+		//hex_dump("DataFrameHeader", pHeader, 36);
 		hex_dump("DataFramePayload", pRxBlk->pTransData,
 			 pRxBlk->TransDataSize);
 	}
